@@ -53,7 +53,7 @@ list while it is iterating through it. The new code fixes this issue by creating
 
 ## `-size <size>`
 
-**The `size <size>` outputs the files based on if they are larger or smaller than a givin size. This is useful for finding files that take up the most space, and can be used as a tool to help manage space.
+**The `size <size>` outputs the files based on if they are larger or smaller than a givin size. This is useful for finding files that take up the most space, and can be used as a tool to help manage space.**
 
 ```bash
 adamconnor@Adams-MacBook-Pro docsearch % find technical -size -1k -name ".*txt"
