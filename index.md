@@ -202,6 +202,7 @@ The search searches through all contents and returns files that contain `alc` an
 
 -----------------------------------------------------------------
 
+
 **--Sources--**
 
 for empty and maxdepth:
