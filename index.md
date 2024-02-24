@@ -14,26 +14,6 @@ public void testReverseInPlace2() {
 **OUTPUT**
 ```
 %TESTC  1 v2
-%TSTTREE1,testReverseInPlace(ArrayTests),false,1,false,-1,testReverseInPlace(ArrayTests),,
-%TESTS  1,testReverseInPlace(ArrayTests)
-
-%TESTE  1,testReverseInPlace(ArrayTests)
-
-%RUNTIME7
-```
-
-## An input that doesn't induce a failure
-```java
-@Test 
-public void testReverseInPlace() {
-  int[] input1 = { 3 };
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[]{ 3 }, input1);
-	}
-```
-**OUTPUT**
-```
-%TESTC  1 v2
 %TSTTREE1,testReverseInPlace2(ArrayTests),false,1,false,-1,testReverseInPlace2(ArrayTests),,
 %TESTS  1,testReverseInPlace2(ArrayTests)
 
@@ -83,6 +63,26 @@ Caused by: java.lang.AssertionError: expected:<3> but was:<1>
 
 %TESTE  1,testReverseInPlace2(ArrayTests)
 %RUNTIME9
+```
+
+## An input that doesn't induce a failure
+```java
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = { 3 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
+**OUTPUT**
+```
+%TESTC  1 v2
+%TSTTREE1,testReverseInPlace(ArrayTests),false,1,false,-1,testReverseInPlace(ArrayTests),,
+%TESTS  1,testReverseInPlace(ArrayTests)
+
+%TESTE  1,testReverseInPlace(ArrayTests)
+
+%RUNTIME7
 ```
 
 ## The bug
